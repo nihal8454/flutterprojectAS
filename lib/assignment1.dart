@@ -82,37 +82,41 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: Center(
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Loginpage()));
-                  },
-                  child: Text("Login"),
-                  style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.black87),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
-                      )),
+                child: SizedBox(width:200,height:50,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Loginpage()));
+                    },
+                    child: Text("Login"),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.black87),
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20)),
+                        )),
+                  ),
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 200),
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Signup()));
-                },
-                child: Text("Signup"),
-                style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.white70),
-                    foregroundColor: MaterialStateProperty.all(Colors.black),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20)),
-                    )),
+              child: SizedBox(width:200,height:50,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Signup()));
+                  },
+                  child: Text("Signup"),
+                  style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.white70),
+                      foregroundColor: MaterialStateProperty.all(Colors.black),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                      )),
+                ),
               ),
             ),
           ],
@@ -204,15 +208,17 @@ class _Signup extends State<Signup> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text("Sign Up"),
-                  style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.black87),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20)))),
+                child: SizedBox(width:200,height:50,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text("Sign Up"),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.black87),
+                        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20)))),
+                  ),
                 ),
               ),
               TextButton(
@@ -293,14 +299,16 @@ class _Loginpage extends State<Loginpage> {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 20),
-            child: ElevatedButton(
-              onPressed: () {},
-              child: const Text("login"),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.black),
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20)))),
+            child: SizedBox(width:200,height:50,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: const Text("login"),
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.black),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)))),
+              ),
             ),
           ),
           TextButton(
