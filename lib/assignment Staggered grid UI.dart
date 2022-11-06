@@ -3,21 +3,20 @@ import 'package:staggered_grid_view_flutter/widgets/staggered_grid_view.dart';
 import 'package:staggered_grid_view_flutter/widgets/staggered_tile.dart';
 
 class staggeredgridviewUI extends StatelessWidget {
-  @override
-  @override
-  List<StaggeredTile> cardtile = [
-    StaggeredTile.count(2, 3),
-    StaggeredTile.count(2, 1.3),
-    StaggeredTile.count(1, 3),
-    StaggeredTile.count(2, 1.4),
-  ];
 
+  List<StaggeredTile> cardtile = [
+    const StaggeredTile.count(2, 3),
+    const StaggeredTile.count(2, 1.3),
+    const StaggeredTile.count(1, 3),
+    const StaggeredTile.count(2, 1.4),
+  ];
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black38,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text('Anime Characters '),
+        title: const Text('Anime Characters '),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 8.0),
