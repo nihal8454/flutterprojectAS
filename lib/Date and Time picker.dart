@@ -27,10 +27,10 @@ class _datetime extends State<Date_time> {
           dateLabelText: 'Date',
           timeLabelText: "Time",
           onChanged: (value) => print(value),
-          // validator: (value) {
-          //   print(value);
-          //   return null;
-          // },
+          validator: (value) {
+            print(value);
+            return null;
+          },
           onSaved: (value) => print(value),
         )
     );
