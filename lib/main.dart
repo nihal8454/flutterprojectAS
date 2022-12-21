@@ -48,7 +48,7 @@ class _SplashState extends State<Splash> {
               ///fetching image from asset way2
               // const Image(image: AssetImage("assets/images/food.png")),
 
-              const Text("MYAPP",style: TextStyle(fontSize: 40,color: Colors.yellow),)
+              const Text("MYAPP",style: TextStyle(fontSize: 40,color: Colors.yellow, ),)
             ],
           ),
         ),
